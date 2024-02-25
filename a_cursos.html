@@ -9,8 +9,6 @@
     <header>
         <nav> 
         <ul>
-            <li><a href="a_amonestacion.html">AMONESTACION
-                <img src="imagene/bx-flag.svg" alt="amonestacion">
             </a></li>
             <li><a href="a_aprobacion.html">APROBACION
                 <img src="imagenes/bx-check-double.svg" alt="aprobacion">
@@ -39,9 +37,83 @@
             <li><a href="iniciodesesion.html">CERRAR SESION
                 <img src="imagenes/bx-log-out.svg" alt="cerrar">
             </a></li>
-
         </ul>
         </nav>
     </header>
+
+    <main>
+        <section>
+            <div class="adm">
+                <h4>AGREGANDO NUEVOS CURSOS</h4>
+                
+                <figure>
+                    <img src="imagenes/" alt="adm">
+                </figure>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>Creando Nuevos Cursos</legend>
+                    <label for="curso">Nivel</label>
+                        <select name="curso" id="curso" required>
+                            <option value="">- Elija un curso -</option>
+                            <optgroup label="Nivel Primario">
+                            <option value="pp">Pre-primario</option>
+                            <option value="1p">1° Grado</option>
+                            <option value="2p">2° Grado</option>
+                            <option value="3p">3° Grado</option>
+                            <option value="4p">4° Grado</option>
+                            <option value="5p">5° Grado</option>
+                            <option value="6p">6° Grado</option>
+                            <optgroup label="Nivel Secundario">
+                            <option value="1s">1° Grado</option>
+                            <option value="2s">2° Grado</option>
+                            <option value="3s">3° Grado</option>
+                            <option value="4s">4° Grado</option>
+                            <option value="5s">5° Grado</option>
+                            <option value="6s">6° Grado</option>
+                    </select>
+
+                    <label for="prof">Asignar Profesor</label>
+                    <select name="prof" id="prof" required>
+
+                        <option value="">Asigne un Profesor</option>
+                        <option value="">Profesor 1</option>
+                        <option value="">Profesor 2</option>
+                        <option value="">Profesor 3</option>
+                        <option value="">Profesor 4</option>
+                        <option value="">Profesor 5</option>
+                        <option value="">Profesor 6</option>
+                    </select>
+
+                    <label for="seccion">Seccion</label>
+                    <select name="seccion" id="seccion" required>
+
+                        <option value="ES">Elija una Seccion</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                   
+                    <label for="period">Periodo</label>
+                    <select name="period" id="period" required>
+                        <option value="">- Elija un periodo -</option>
+                        <option value="">2022-2023</option>
+                        <option value="">2023-2024</option>
+                    </select>
+
+                </fieldset>
+
+                <input type="button" name="guardar" value="Guardar">
+                <input type="reset" value="Cancelar">
+            </form>
+        </section>
+    </main>
+
 </body>
 </html>

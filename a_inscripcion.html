@@ -43,5 +43,123 @@
         </ul>
         </nav>
     </header> 
+
+    <main>
+        <section>
+            <div class="adm">
+                <h4>INSCRIPCION</h4>
+                
+                <figure>
+                    <img src="imagenes/" alt="adm">
+                </figure>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>Datos del estudiante</legend>
+                    <label for="nom">Nombre</label>
+                    <input type="text" id="nom" autocomplete="on" autofocus required placeholder="Ej: Jose">
+                    <label for="ape">Nombre</label>
+                    <input type="text" id="Ape" required placeholder="Ej: Garcia">
+
+                    <label for="curso">Nivel</label>
+                        <select name="sexo" id="sexo" required>
+                            <option value="sexo">- Elegir Sexo-</option>
+                            <option value="mas">Masculino</option>
+                            <option value="fem">Femenino</option>
+                        </select>
+                        <label for="fecha">Fecha de nacimiento</label>
+                        <input type="date" id="fecha">
+
+                    <label for="curso">Curso</label>
+                        <select name="curso" id="curso" required>
+                            <option value="">- Elija un curso -</option>
+                            <optgroup label="Nivel Primario">
+                            <option value="pp">Pre-primario</option>
+                            <option value="1p">1° Grado</option>
+                            <option value="2p">2° Grado</option>
+                            <option value="3p">3° Grado</option>
+                            <option value="4p">4° Grado</option>
+                            <option value="5p">5° Grado</option>
+                            <option value="6p">6° Grado</option>
+                            <optgroup label="Nivel Secundario">
+                            <option value="1s">1° Grado</option>
+                            <option value="2s">2° Grado</option>
+                            <option value="3s">3° Grado</option>
+                            <option value="4s">4° Grado</option>
+                            <option value="5s">5° Grado</option>
+                            <option value="6s">6° Grado</option>
+                    </select>
+
+                    <label for="prof">Asignar Profesor</label>
+                    <select name="prof" id="prof" required>
+
+                        <option value="">Asigne un Profesor</option>
+                        <option value="">Profesor 1</option>
+                        <option value="">Profesor 2</option>
+                        <option value="">Profesor 3</option>
+                        <option value="">Profesor 4</option>
+                        <option value="">Profesor 5</option>
+                        <option value="">Profesor 6</option>
+                    </select>
+
+                    <label for="seccion">Seccion</label>
+                    <select name="seccion" id="seccion" required>
+
+                        <option value="ES">Elija una Seccion</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+
+                    </select>
+
+                    <legend>Datos del Tutor</legend>
+
+                    <label for="nomt">Nombre</label>
+                    <input type="text" id="nomt" required placeholder="Ej: Jose">
+                    <label for="apet">Nombre</label>
+                    <input type="text" id="Apet" required placeholder="Ej: Garcia">
+                    <label for="numero">Cedula de Identidad</label>
+                    <input type="number" id="cedula" min="11" max="13">
+                    <label for="numero">Telefono</label>
+                    <input type="number" id="numero" min="10" max="12">
+                    <label for="correo">Escriba un correo</label>
+                    <input type="email" id="correo">
+                    <label for="educ">Nivel Educacion</label>
+                    <input type="text" id="educ" required placeholder="Ej: Primaria">
+                    <label for="ocup">Ocupacion</label>
+                    <input type="text" id="parent" required placeholder="Ej: Contador">
+                    <label for="parent">Parentesco</label>
+                    <input type="text" id="parent" required placeholder="Ej: Padre">
+
+
+
+
+                    <label for="provincia">Provincia</label>
+                    <input type="text" id="Provicia" required placeholder="Ej: Santiago">
+                    <label for="sector">Sector</label>
+                    <input type="text" id="Sector" required placeholder="Ej: Herradura">
+                    <label for="calle">Calle</label>
+                    <input type="text" id="Calle" required placeholder="Ej: No:4">
+                    <label for="edificio">Edificio</label>
+                    <input type="text" id="edificio" required placeholder="Ej: 13">
+
+
+
+
+
+
+                    
+
+
+                </fieldset>
+
+                <input type="button" name="guardar" value="Guardar">
+                <input type="reset" value="Cancelar">
+            </form>
+        </section>
+    </main>
 </body>
 </html>
