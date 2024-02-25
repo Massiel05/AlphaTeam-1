@@ -50,7 +50,7 @@
                 <h4>INSCRIPCION</h4>
                 
                 <figure>
-                    <img src="imagenes/" alt="adm">
+                    <img src="imagenes/setting.png" height="25px" alt="adm">
                 </figure>
             </div>
             <form>
@@ -61,7 +61,7 @@
                     <label for="ape">Nombre</label>
                     <input type="text" id="Ape" required placeholder="Ej: Garcia">
 
-                    <label for="curso">Nivel</label>
+                    <label for="sexo">Sexo</label>
                         <select name="sexo" id="sexo" required>
                             <option value="sexo">- Elegir Sexo-</option>
                             <option value="mas">Masculino</option>
@@ -133,10 +133,6 @@
                     <input type="text" id="parent" required placeholder="Ej: Contador">
                     <label for="parent">Parentesco</label>
                     <input type="text" id="parent" required placeholder="Ej: Padre">
-
-
-
-
                     <label for="provincia">Provincia</label>
                     <input type="text" id="Provicia" required placeholder="Ej: Santiago">
                     <label for="sector">Sector</label>
@@ -145,20 +141,24 @@
                     <input type="text" id="Calle" required placeholder="Ej: No:4">
                     <label for="edificio">Edificio</label>
                     <input type="text" id="edificio" required placeholder="Ej: 13">
-
-
-
-
-
-
-                    
+                    <label for="foto">Foto 2x2</label>
+                    <input type="file" id="foto" >
 
 
                 </fieldset>
 
                 <input type="button" name="guardar" value="Guardar">
                 <input type="reset" value="Cancelar">
+
+    
             </form>
+
+            <script>
+                
+                var matricula = nomatricula + 1;
+                var correo = matricula + "@gmail.com"
+                alert("Estudiante registrado, su coreo institucional es; " + correo + ", y su contraseña es; " + matricula + ".");
+            </script>
         </section>
     </main>
 </body>

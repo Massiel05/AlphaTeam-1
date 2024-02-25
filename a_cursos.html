@@ -44,15 +44,21 @@
     <main>
         <section>
             <div class="adm">
-                <h4>AGREGANDO NUEVOS CURSOS</h4>
+                <h4>BUSCAR CURSOS</h4>
                 
                 <figure>
-                    <img src="imagenes/" alt="adm">
+                    <img src="imagenes/setting.png" height="25px" alt="adm">
                 </figure>
+                <figure>
+                    <a href="a_crearcursos.html"><img src="imagenes/bxs-folder-plus.svg" alt="Crear">CREAR</a>
+                </figure>
+
             </div>
             <form>
                 <fieldset>
-                    <legend>Creando Nuevos Cursos</legend>
+                    <legend>Buscar  Cursos</legend>
+                    <label for="busqueda">Busqueda</label>
+                    <input type="search" id="busqueda" placeholder="Referencia">
                     <label for="curso">Nivel</label>
                         <select name="curso" id="curso" required>
                             <option value="">- Elija un curso -</option>
@@ -73,10 +79,10 @@
                             <option value="6s">6° Grado</option>
                     </select>
 
-                    <label for="prof">Asignar Profesor</label>
+                    <label for="prof">Profesor</label>
                     <select name="prof" id="prof" required>
 
-                        <option value="">Asigne un Profesor</option>
+                        <option value="">Seleccione un Profesor</option>
                         <option value="">Profesor 1</option>
                         <option value="">Profesor 2</option>
                         <option value="">Profesor 3</option>
@@ -107,10 +113,13 @@
                         <option value="">2023-2024</option>
                     </select>
 
+
+
                 </fieldset>
 
-                <input type="button" name="guardar" value="Guardar">
+                <input type="button" name="Buscar" value="Buscar">
                 <input type="reset" value="Cancelar">
+
             </form>
         </section>
     </main>
